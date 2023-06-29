@@ -51,7 +51,7 @@ optionImages.forEach((image, index) => {
                 userScore += 0
                 cpuScore += 0
             }
-            result.innerHTML = userValue === cpuValue ? "Match Draw +0" : `<h3>${outComeValue}`
+            result.innerHTML = userValue === cpuValue ? "Round Draw +0" : `<h3>${outComeValue}`
             you.innerHTML = `<h2>YOU : ${userScore}`  
             cpu.innerHTML = `<h2>CPU : ${cpuScore}` 
             if(userScore == 10){
