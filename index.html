@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        #txt {
+            margin-left:35%; 
+            margin-top:10%; 
+            color:white;
+            font-size: 40px;
+        }
+
+        .self {
+            width: 100px;
+            animation: rotation 3s infinite linear;
+            padding: 20px;
+        }
+
+        .self2 {
+            width: 100px;
+            padding: 20px;
+            animation: rotation 3s infinite linear;
+        }
+        @media only screen and (max-width: 900px) {
+            .self {
+                width: 15%;
+                padding: 10px;
+            }
+            .self2 {
+                width: 15%;
+                padding: 10px;
+            }
+            #txt {
+                margin-left:35%; 
+                margin-top:10%; 
+                color:white;
+                font-size: 25px;
+            }
+          }
+
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes rotation {
+
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }            
+
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="img">
+            <img class="self" src="imgs/rock.png" alt="failed to load">
+            <img class="self" src="imgs/paper.png" alt="failed to load">
+            <img class="self" src="imgs/scissor.png" alt="failed to load">
+            <img class="self2" src="imgs/rock.png" alt="failed to load">
+            <img class="self2" src="imgs/paper.png" alt="failed to load">
+            <img class="self2" src="imgs/scissor.png" alt="failed to load">
+        </div>
+        <p id="txt">Loading . . .</p>
+
+    </div>
+
+
+
+    <script>
+        let time = setTimeout(() => {
+                window.open("main.html", "_self")
+        }, 7000)
+    </script>
+</body>
+
+</html>

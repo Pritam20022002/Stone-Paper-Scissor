@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 254, 255);
+    background-image: url("imgs/martin-martz-qzfu2K5Iz7I-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container{
+    padding: 3rem 7rem;
+    background:#ffff;
+    border-radius: 15px;
+    box-shadow:0 20px 10px rgba(0,0,0,0.3);
+}
+@media only screen and (max-width: 1395px) {
+    body {
+        background-image: none;
+        background-color: black;
+        background-image: url("imgs/Premium\ Vector\ _\ Unbelievable\ mountain\ landscape_\ modern\ \ illustration\ concept_.jpeg");
+        background-size: auto;
+        overflow: hidden;
+    }
+    .container{
+        padding: 4rem 1rem;
+        background:#fff;
+        border-radius: 15px;
+        box-shadow:0 20px 10px rgba(0,0,0,0.7);
+    }
+  }
+.container.start .user_result{
+    transform-origin: left;
+    animation: userShake 0.7s ease infinite;
+}
+@keyframes userShake{
+    50%{
+        transform: rotate(10deg);
+    }
+}
+.container.start .cpu_result{
+    transform-origin: right;
+    animation: cpuShake 0.7s ease infinite;
+}
+@keyframes cpuShake{
+    50%{
+        transform: rotate(10deg);
+    }
+}
+.txt{
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgb(110, 5, 110);
+}
+.result_images{
+    display: flex;
+    column-gap: 7rem;
+}
+.result_images img{
+    width: 100px;
+}
+.user_result img{
+    transform: scaleX(-1);
+}
+.result{
+    text-align: center;
+    font-size: 1rem;    
+    color: rgb(110, 5, 110);
+    margin-top: 1.5rem;
+}
+.option_image img{
+    width: 50px;
+    pointer-events: none;
+}
+.option_image .self{
+    transform: scaleX(-1);
+}
+
+.option_images{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+.option_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.option_image:hover{
+    opacity: 1;
+}
+.option_image.active{
+    opacity: 1;
+}
+.option_image p{
+    color: purple;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    pointer-events: none;
+} 
