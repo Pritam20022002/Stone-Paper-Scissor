@@ -11,7 +11,7 @@ body{
     align-items: center;
     justify-content: center;
     background: rgb(255, 254, 255);
-    background-image: url("imgs/martin-martz-qzfu2K5Iz7I-unsplash.jpg");
+    background-image: url("martin-martz-qzfu2K5Iz7I-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -26,7 +26,7 @@ body{
     body {
         background-image: none;
         background-color: black;
-        background-image: url("imgs/Premium\ Vector\ _\ Unbelievable\ mountain\ landscape_\ modern\ \ illustration\ concept_.jpeg");
+        background-image: url("Premium\ Vector\ _\ Unbelievable\ mountain\ landscape_\ modern\ \ illustration\ concept_.jpeg");
         background-size: auto;
         overflow: hidden;
     }
